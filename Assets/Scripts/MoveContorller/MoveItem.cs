@@ -4,6 +4,10 @@ using UnityEngine;
  
 public class MoveItem: MonoBehaviour
 {
-    public GameObject routeObj = null ;
+    public Transform routeTrans;
     public int moveSpeed = 0;
+    public void Start()
+    {
+        routeTrans = gameObject.GetComponent<Transform>();
+    }
 } 
